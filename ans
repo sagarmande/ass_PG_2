@@ -1,0 +1,79 @@
+Here are Python programs for each of the tasks you've mentioned:
+
+1. Convert kilometers to miles:
+```python
+# Input distance in kilometers
+kilometers = float(input("Enter distance in kilometers: "))
+
+# Conversion factor
+conversion_factor = 0.621371
+
+# Convert to miles
+miles = kilometers * conversion_factor
+
+# Display the result
+print(f"{kilometers} kilometers is equal to {miles} miles")
+```
+
+2. Convert Celsius to Fahrenheit:
+```python
+# Input temperature in Celsius
+celsius = float(input("Enter temperature in Celsius: "))
+
+# Convert to Fahrenheit
+fahrenheit = (celsius * 9/5) + 32
+
+# Display the result
+print(f"{celsius} degrees Celsius is equal to {fahrenheit} degrees Fahrenheit")
+```
+
+3. Display a calendar for a specific month and year:
+```python
+import calendar
+
+# Input month and year
+year = int(input("Enter year: "))
+month = int(input("Enter month (1-12): "))
+
+# Display the calendar
+cal = calendar.month(year, month)
+print(f"Calendar for {calendar.month_name[month]} {year}:\n")
+print(cal)
+```
+
+4. Solve a quadratic equation:
+```python
+import cmath
+
+# Input coefficients
+a = float(input("Enter coefficient a: "))
+b = float(input("Enter coefficient b: "))
+c = float(input("Enter coefficient c: "))
+
+# Calculate the discriminant
+discriminant = (b**2) - (4*a*c)
+
+# Find two solutions
+solution1 = (-b - cmath.sqrt(discriminant)) / (2*a)
+solution2 = (-b + cmath.sqrt(discriminant)) / (2*a)
+
+# Display the solutions
+print(f"Solutions: {solution1} and {solution2}")
+```
+
+5. Swap two variables without a temporary variable:
+```python
+# Input values
+x = input("Enter the value of x: ")
+y = input("Enter the value of y: ")
+
+# Swapping without a temporary variable
+x, y = y, x
+
+# Output swapped values
+print("After swapping:")
+print("x =", x)
+print("y =", y)
+```
+
+These Python programs cover the tasks you specified. You can run them in a Python environment to see the results.
